@@ -69,6 +69,7 @@ fn create_file(path: &Path) -> SumkinResult<()> {
     Ok(())
 }
 
+#[derive(Clone, Debug)]
 pub struct SqliteBackend {
     pool: SqlitePool
 }
